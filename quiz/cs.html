@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Civil Service Exam Reviewer Philippines</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/style2.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a href="index.html" class="navbar-brand" id="myHeader"><h1>Civil Service Exam Reviewer Philippines</h1></a>	
+				<ul class="nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="../review.html">Review</a></li>
+				</ul>
+		</nav>
+		
+		<div class="container-fluid">
+		<div class="row">
+		<div class="col-sm-2" id="sidebar">
+			<nav id="mySidebar">
+				<ul>
+					<li><a href="al.html">Analogy and Logic</a></li>
+					<li><a href="co.html">Clerical Operations</a></li>
+					<li><a href="cs.html">Correct Spelling and Idiomatic Expressions</a></li>
+					<li><a href="egcu.html">English Grammar and Correct Usage</a></li>
+					<li><a href="ev.html">English Vocabulary</a></li>
+					<li><a href="nr.html">Numerical Reasoning</a></li>
+					<li><a href="pc.html">Philippine Constitution, General Information, Current Events</a></li>
+					<li><a href="po.html">Paragraph Organization</a></li>
+					<li><a href="rc.html">Reading Comprehension</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="col-sm" id="main-container">
+		<div class="container">
+		<!--Start-->
+			<div id="quiz_title">
+				<h2>Correct Spelling and Idiomatic Expressions</h2><!--Change-->
+			</div>
+			
+			<div class="row resultContainer">
+				<div class="col-sm" id="result"></div>
+				<div class="col-sm" id="correctAnswer"></div>
+			</div>
+			
+			<section id="quiz"><!--Change-->
+				<form name="quizForm" onsubmit="return myQuiz()">
+				
+				<p id="instructions"><strong>Instruction: </strong><em>Choose the meaning of the underlined phrases from the given choices.</em></p>
+				
+				<div>
+					<h3>1. If you don’t <u>spill the beans</u> now, you might gonna regret it.</h3>
+					
+					<input type="radio" name="q1" id="q1a" value="a">
+					<label for="q1a">spread rumors</label></br>
+					
+					<input type="radio" name="q1" id="q1b" value="b">
+					<label for="q1b">let out a secret</label></br>
+					
+					<input type="radio" name="q1" id="q1c" value="c">
+					<label for="q1c">plant some seeds</label></br>
+					
+					<input type="radio" name="q1" id="q1d" value="d">
+					<label for="q1d">none of the above</label></br>
+				</div>
+				<div>
+					<h3>2. Hey, man, you are absolutely <u>barking up the wrong tree</u> here because I’m innocent.</h3>
+					
+					<input type="radio" name="q2" id="q2a" value="a">
+					<label for="q2a">choosing the wrong dog</label></br>
+					
+					<input type="radio" name="q2" id="q2b" value="b">
+					<label for="q2b">giving up a fight</label></br>
+					
+					<input type="radio" name="q2" id="q2c" value="c">
+					<label for="q2c">accusing the wrong person</label></br>
+					
+					<input type="radio" name="q2" id="q2d" value="d">
+					<label for="q2d">setting up an event in a tree</label></br>
+				</div>
+				<div>
+					<h3>3. One proven way to beat an enemy is find his <u>Achilles heel.</u></h3>
+					
+					<input type="radio" name="q3" id="q3a" value="a">
+					<label for="q3a">secret strategy</label></br>
+					
+					<input type="radio" name="q3" id="q3b" value="b">
+					<label for="q3b">amulet</label></br>
+					
+					<input type="radio" name="q3" id="q3c" value="c">
+					<label for="q3c">strong point</label></br>
+					
+					<input type="radio" name="q3" id="q3d" value="d">
+					<label for="q3d">weak spot</label></br>
+				</div>
+				<div>
+					<h3>4. His new Ferrari <u>costs an arm and a leg</u> so he is now looking for another job.</h3>
+					
+					<input type="radio" name="q4" id="q4a" value="a">
+					<label for="q4a">very expensive</label></br>
+					
+					<input type="radio" name="q4" id="q4b" value="b">
+					<label for="q4b">got fired</label></br>
+					
+					<input type="radio" name="q4" id="q4c" value="c">
+					<label for="q4c">met an accident</label></br>
+					
+					<input type="radio" name="q4" id="q4d" value="d">
+					<label for="q4d">was stolen</label></br>
+				</div>
+				<div>
+					<h3>5. He married a woman who was <u>born with a silver spoon in her mouth.</u></h3>
+					
+					<input type="radio" name="q5" id="q5a" value="a">
+					<label for="q5a">born very beautiful</label></br>
+					
+					<input type="radio" name="q5" id="q5b" value="b">
+					<label for="q5b">born very poor</label></br>
+					
+					<input type="radio" name="q5" id="q5c" value="c">
+					<label for="q5c">born from a very rich family</label></br>
+					
+					<input type="radio" name="q5" id="q5d" value="d">
+					<label for="q5d">born very talkative</label></br>
+				</div>
+				<div>
+					<h3>6. She has different investments because she <u>doesn’t want to put all eggs in one basket.</u></h3>
+					
+					<input type="radio" name="q6" id="q6a" value="a">
+					<label for="q6a">doesn’t want to put all resources in one possibility</label></br>
+					
+					<input type="radio" name="q6" id="q6b" value="b">
+					<label for="q6b">doesn’t want to cook everything at once</label></br>
+					
+					<input type="radio" name="q6" id="q6c" value="c">
+					<label for="q6c">doesn’t want to go bankrupt</label></br>
+					
+					<input type="radio" name="q6" id="q6d" value="d">
+					<label for="q6d">none of the above</label></br>
+				</div>
+				<div>
+					<h3>7. Whenever his crush passes by the hallway, he’s having <u>butterflies in his stomach.</u></h3>
+					
+					<input type="radio" name="q7" id="q7a" value="a">
+					<label for="q7a">he feels sick</label></br>
+					
+					<input type="radio" name="q7" id="q7b" value="b">
+					<label for="q7b">he feels nervous</label></br>
+					
+					<input type="radio" name="q7" id="q7c" value="c">
+					<label for="q7c">he feels like flying</label></br>
+					
+					<input type="radio" name="q7" id="q7d" value="d">
+					<label for="q7d">he feels so handsome</label></br>
+				</div>
+				<div>
+					<h3>8. Even though they had a nasty fight, they decided to <u>bury the hatchet</u> and move on.</h3>
+					
+					<input type="radio" name="q8" id="q8a" value="a">
+					<label for="q8a">kill the enemy</label></br>
+					
+					<input type="radio" name="q8" id="q8b" value="b">
+					<label for="q8b">remember the past</label></br>
+					
+					<input type="radio" name="q8" id="q8c" value="c">
+					<label for="q8c">bury the dead</label></br>
+					
+					<input type="radio" name="q8" id="q8d" value="d">
+					<label for="q8d">forget the past quarrel</label></br>
+				</div>
+				<div>
+					<h3>9. My father always reminds us, <u>“don’t count your chickens before the eggs have hatched."</u></h3>
+					
+					<input type="radio" name="q9" id="q9a" value="a">
+					<label for="q9a">Don’t eat your eggs before they are cooked.</label></br>
+					
+					<input type="radio" name="q9" id="q9b" value="b">
+					<label for="q9b">Don’t make plans for something that might not happen.</label></br>
+					
+					<input type="radio" name="q9" id="q9c" value="c">
+					<label for="q9c">Don’t deal with your problems before they are solved.</label></br>
+					
+					<input type="radio" name="q9" id="q9d" value="d">
+					<label for="q9d">All of the above.</label></br>
+				</div>
+				<div>
+					<h3>10. iphones became so popular not only to teens, even my grandparents <u>jumped on the bandwagon</u> and bought some.</h3>
+					
+					<input type="radio" name="q10" id="q10a" value="a">
+					<label for="q10a">ride on the gadget and sell Apple</label></br>
+					
+					<input type="radio" name="q10" id="q10b" value="b">
+					<label for="q10b">jump for technology and sell iphones</label></br>
+					
+					<input type="radio" name="q10" id="q10c" value="c">
+					<label for="q10c">joined the new trend and bought iphones</label></br>
+					
+					<input type="radio" name="q10" id="q10d" value="d">
+					<label for="q10d">bought Android and Apple</label></br>
+				</div>
+					<input type="submit" value="Submit Answers" id="submit" onClick="scrollUp();">
+				</form>
+			</section>
+		</div>
+		</div>
+		</div>
+		</div>
+
+	<script type="text/javascript">
+	function myQuiz() {
+		var total = 10; //set total number of questions. //change
+		var score = 0; // set the score.
+		
+		//get user input//change
+		var q1 = document.forms["quizForm"]["q1"].value;
+		var q2 = document.forms["quizForm"]["q2"].value;
+		var q3 = document.forms["quizForm"]["q3"].value;
+		var q4 = document.forms["quizForm"]["q4"].value;
+		var q5 = document.forms["quizForm"]["q5"].value;
+		var q6 = document.forms["quizForm"]["q6"].value;
+		var q7 = document.forms["quizForm"]["q7"].value;
+		var q8 = document.forms["quizForm"]["q8"].value;
+		var q9 = document.forms["quizForm"]["q9"].value;
+		var q10 = document.forms["quizForm"]["q10"].value;
+		
+		//set correct answers //change
+		var answers = ["b","c","d","a","c","a","b","d","b","c"]
+						
+		//check answers
+		for(var i = 1; i <= total; i++) {
+			if(eval('q' + i) == answers[i - 1]) {
+				score++;
+			}
+		}
+		//display score
+		var result = document.getElementById('result')
+		result.innerHTML = `<h3 id="results_h3">You scored ${score} out of ${total}</h3>`;
+		
+		//display correct answer
+		var correctAnswer = document.getElementById('correctAnswer');
+		correctAnswer.innerHTML = `<h3 id="correctAnswers_h3">Correct Answers:</h3>`;
+		for(var i = 0; i < answers.length; i++){
+			correctAnswer.innerHTML += `<p id="correctAnswers_p">${i + 1}. ${answers[i]}<p>`;
+		}
+		
+		//return false so that the webpage will not refresh upon submit
+		return false;
+	}
+	</script>
+	<script src="../js/script.js"></script>
+	</body>
+</html>

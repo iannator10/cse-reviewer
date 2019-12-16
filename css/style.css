@@ -1,0 +1,432 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+
+/*Header Start*/
+
+header {
+	display: grid;
+	text-align: center;
+	background-color: #2b2b2b;
+}
+
+header h1 {
+	color: #ffffff;
+	margin: 15px;
+	font-family: Verdana;
+}
+
+#myHeader {
+	text-decoration: none;
+}
+
+header p {
+	color: #fcfcfc;
+	margin-bottom: 10px;
+	font-style: italic;
+}
+
+/*Header End*/
+
+/*Navigations Start*/
+
+#myNav ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	background-color: #333;
+	text-align: center;
+}
+
+#myNav p {
+	color: #fff682;
+	font-family: verdana;
+	font-size: 16px;
+	padding: 0.5em;
+	display: inline-block;
+}
+
+#myNav li{
+	display: inline-block;
+	font-family: Verdana;
+	font-size: 18px;
+}
+
+#myNav a {
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#myNav li a:hover {
+  background-color: #111;
+}
+
+#myNav_main ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	background-color: #333;
+	text-align: center;
+}
+
+#myNav_main p {
+	color: #fff682;
+	font-family: verdana;
+	font-size: 16px;
+	padding: 0.5em;
+	display: inline-block;
+}
+
+#myNav_main li{
+	display: inline-block;
+	font-family: Verdana;
+	font-size: 18px;
+}
+
+#myNav_main a {
+	display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#myNav_main li a:hover {
+  background-color: #111;
+}
+
+#myBtn{
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: #92b2e5;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 50px;
+	font-size: 18px;
+}
+
+#myBtn:hover {
+	background-color: #738fbc;
+}
+
+/*Navigations End*/
+
+/*Link of the Sources Start*/
+
+#web_link {
+	text-align: center;
+	font-family: verdana;
+	font-size: 16px;
+	margin: 2em;
+}
+
+#web_link a {
+	text-decoration: none;
+	color: #333;
+}
+
+#web_link a:hover {
+	text-decoration: none;
+	color: #232323;
+}
+
+/*Link of the Sources End*/
+
+/*Content Start*/
+
+.wrapper {
+	width: 100%;
+}
+
+.wrapper div:nth-child(even) {
+	background-color: #f2f2f2;
+}
+/**************************************/
+
+#welcome {
+	margin-top: 1em;
+	font-family: verdana;
+	text-align: center;
+	font-size: 24px;
+	padding: 1em;
+	color: #11242d;
+	height: 300px;
+}
+
+#welcome h2 {
+	padding-top: 2em;
+}
+
+/**************************************/
+
+#contactUs {
+	padding: 1em;
+	color: #11242d;
+	margin-bottom: 1em;
+	height: 250px;
+	padding-top: 5em;
+	padding-bottom: 5em;
+	text-align: center;
+}
+
+#contactUs h3 {
+	font-family: verdana;
+	font-size: 24px;
+	color: #11242d;
+}
+
+#contactUs a {
+	font-family: verdana;
+	font-size: 16px;
+	color: #11242d;
+}
+
+/**************************************/
+
+#about {
+	padding: 1em;
+	color: #11242d;
+	text-align: center;
+	height: 400px;
+	padding-top: 5em;
+}
+
+#about h2 {
+	font-family: verdana;
+	text-align: center;
+	font-size: 24px;
+	color: #11242d;
+	
+}
+
+#about p {
+	font-size: 16px;
+	font-family: verdana;
+	
+}
+
+/**************************************/
+
+#reminders {
+	color: #11242d;
+	height: 300px;
+	padding-top: 5em;
+}
+
+#reminders h3 {
+	font-family: verdana;
+	text-align: center;
+	font-size: 24px;
+	color: #11242d;
+	
+}
+
+#reminders ul {
+	font-size: 16px;
+	font-family: verdana;
+	padding: 3em;
+	
+}
+
+/**************************************/
+
+.sources {
+	display: grid;
+	grid-gap: 1em;
+	padding: 1em;
+	padding-top: 5em;
+	padding-bottom: 5em;
+	
+}
+
+.sources div {
+	display: grid;
+	grid-template-columns: 1fr 1fr; 
+	font-family: verdana;
+	font-size: 16px;
+	text-align: center;
+	border: 3px solid #11242d;
+	border-radius: 5px;
+	color: #11242d; 
+}
+
+.sources h2 {
+	font-family: verdana;
+	text-align: center;
+	font-size: 24px;
+	color: #11242d;
+	padding-bottom: 3em;
+}
+
+.sources h3 {
+	padding: 1em;
+}
+
+.sources a {
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #333;
+	padding: 1em;
+	font-size: 16px;
+}
+
+.sources a:hover {
+	text-decoration: none;
+	color: #fff682;
+	background-color: #232323;
+}
+
+/**************************************/
+
+/*Content End*/
+
+/*Quiz Start*/
+
+#instructions {
+	font-family: verdana;
+	text-align: center;
+	padding: 1.5em;
+	font-size: 16px;
+}
+
+#quiz_title {
+	text-align: center;
+	font-family: Verdana;
+	font-size: 28px;
+	margin: 1em;
+	padding: 1em;
+	color: #11242d;
+	border-bottom: solid 2px rgb(17, 36, 45, .1);
+}
+
+#quiz {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	float: left;
+    position: relative;
+    left: 50%;
+}
+
+#quiz form {
+	display: grid;
+	grid-gap: 1em;
+	width: auto;
+	float: left;
+    position: relative;
+    left: -50%;
+	
+}
+
+#quiz div {
+	background-color: #eaeeef;
+	padding: 1.5em;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px 0.3px #bbc6c9;
+}
+
+#quiz div:hover {
+	background-color: #dee6e8;
+	transition-duration: 0.1s;
+}
+
+#quiz h3 {
+	color: #11242d;
+	font-family: verdana;
+	font-size: 16px;
+	padding: 1em;
+}
+
+#quiz label {
+		color: #11242d;
+		margin: 0.5em;
+		font-family: verdana;
+		font-size: 16px;
+}
+
+#quiz input {
+	margin: 0.8em;
+}
+
+.resultContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+}
+
+
+#results_h3 {
+	color: white;
+	text-align: center;
+	padding: 1em;
+	margin: 1em;
+	font-family: Verdana;
+	font-size: 24px;
+	text-decoration: bold;
+	background-color: #11242d;
+	border-radius: 5px;
+}
+
+#correctAnswers_h3 {
+	color: white;
+	text-align: center;
+	padding: 1em;
+	margin: 1em;
+	font-family: Verdana;
+	font-size: 24px;
+	text-decoration: bold;
+	background-color: #11242d;
+	border-radius: 5px;
+}
+
+#correctAnswers_p {
+	text-align: left;
+	font-family: Verdana;
+	font-size: 14px;
+	text-decoration: bold;
+	background-color: #eaeeef;
+	margin: 1em;
+	padding: 0.3em;
+	text-decoration: bold;
+}
+
+
+input[type=submit] {
+	color: white;
+	font-size: 28px;
+	font-family: Verdana;
+    padding:15px; 
+    background:green; 
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover {
+	background: #00ff00;
+	transition-duration: 0.3s;
+}
+
+/*Quiz End*/

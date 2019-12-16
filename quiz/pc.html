@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Civil Service Exam Reviewer Philippines</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/style2.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a href="index.html" class="navbar-brand" id="myHeader"><h1>Civil Service Exam Reviewer Philippines</h1></a>	
+				<ul class="nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="../review.html">Review</a></li>
+				</ul>
+		</nav>
+		
+		<div class="container-fluid">
+		<div class="row">
+		<div class="col-sm-2" id="sidebar">
+			<nav id="mySidebar">
+				<ul>
+					<li><a href="al.html">Analogy and Logic</a></li>
+					<li><a href="co.html">Clerical Operations</a></li>
+					<li><a href="cs.html">Correct Spelling and Idiomatic Expressions</a></li>
+					<li><a href="egcu.html">English Grammar and Correct Usage</a></li>
+					<li><a href="ev.html">English Vocabulary</a></li>
+					<li><a href="nr.html">Numerical Reasoning</a></li>
+					<li><a href="pc.html">Philippine Constitution, General Information, Current Events</a></li>
+					<li><a href="po.html">Paragraph Organization</a></li>
+					<li><a href="rc.html">Reading Comprehension</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="col-sm" id="main-container">
+		<div class="container">
+		<!--Start-->
+			<div id="quiz_title">
+				<h2>Philippine Constitution, General Information, Current Events</h2><!--Change-->
+			</div>
+			
+			<div class="row resultContainer">
+				<div class="col-sm" id="result"></div>
+				<div class="col-sm" id="correctAnswer"></div>
+			</div>
+			
+			<section id="quiz"><!--Change-->
+				<form name="quizForm" onsubmit="return myQuiz()">
+				
+				<p id="instructions"><strong>Instruction: </strong><em>Choose the correct answer for each question.</em></p>
+				
+				<div>
+					<h3>1. What are the 3 main branches of the Government of the Philippines?</h3>
+					
+					<input type="radio" name="q1" id="q1a" value="a">
+					<label for="q1a">Senate, Supreme Court, Congress</label></br>
+					
+					<input type="radio" name="q1" id="q1b" value="b">
+					<label for="q1b">Presidential, Unicameral- Parliamentary, Bicameral-Parliamentary</label></br>
+					
+					<input type="radio" name="q1" id="q1c" value="c">
+					<label for="q1c">Legislative, Executive, Judicial</label></br>
+					
+					<input type="radio" name="q1" id="q1d" value="d">
+					<label for="q1d">The Legislature, The Senate, The Supreme Court</label></br>
+				</div>
+				<div>
+					<h3>2. The Supreme Court shall be composed of a Chief Justice and how many Associates Justices?</h3>
+					
+					<input type="radio" name="q2" id="q2a" value="a">
+					<label for="q2a">12</label></br>
+					
+					<input type="radio" name="q2" id="q2b" value="b">
+					<label for="q2b">13</label></br>
+					
+					<input type="radio" name="q2" id="q2c" value="c">
+					<label for="q2c">14</label></br>
+					
+					<input type="radio" name="q2" id="q2d" value="d">
+					<label for="q2d">15</label></br>
+				</div>
+				<div>
+					<h3>3. The Commander-in-Chief of all armed forces of the Philippines this 2019 is _________.</h3>
+					
+					<input type="radio" name="q3" id="q3a" value="a">
+					<label for="q3a">Air Force Commanding General Jeffrey Delgado</label></br>
+					
+					<input type="radio" name="q3" id="q3b" value="b">
+					<label for="q3b">Rodrigo Duterte</label></br>
+					
+					<input type="radio" name="q3" id="q3c" value="c">
+					<label for="q3c">Chief Justice Maria Lourdes Sereno</label></br>
+					
+					<input type="radio" name="q3" id="q3d" value="d">
+					<label for="q3d">AFP Chief Lieutenant Gen. Emmanuel Bautista</label></br>
+				</div>
+				<div>
+					<h3>4. The executive power shall be vested in the _________.</h3>
+					
+					<input type="radio" name="q4" id="q4a" value="a">
+					<label for="q4a">President of the Philippines</label></br>
+					
+					<input type="radio" name="q4" id="q4b" value="b">
+					<label for="q4b">House of Representatives</label></br>
+					
+					<input type="radio" name="q4" id="q4c" value="c">
+					<label for="q4c">The Supreme Court</label></br>
+					
+					<input type="radio" name="q4" id="q4d" value="d">
+					<label for="q4d">The Congress</label></br>
+				</div>
+				<div>
+					<h3>5. The legislative power shall be vested in the _________ which shall consist of a Senate and a House of Representatives.</h3>
+					
+					<input type="radio" name="q5" id="q5a" value="a">
+					<label for="q5a">Congress of the Philippines</label></br>
+					
+					<input type="radio" name="q5" id="q5b" value="b">
+					<label for="q5b">House of Ombudsman</label></br>
+					
+					<input type="radio" name="q5" id="q5c" value="c">
+					<label for="q5c">The Supreme Court</label></br>
+					
+					<input type="radio" name="q5" id="q5d" value="d">
+					<label for="q5d">Bureau of Internal Revenue</label></br>
+				</div>
+				<div>
+					<h3>6. The Senate shall be composed of how many senators elected at large by voters of the Philippines?</h3>
+					
+					<input type="radio" name="q6" id="q6a" value="a">
+					<label for="q6a">21</label></br>
+					
+					<input type="radio" name="q6" id="q6b" value="b">
+					<label for="q6b">22</label></br>
+					
+					<input type="radio" name="q6" id="q6c" value="c">
+					<label for="q6c">23</label></br>
+					
+					<input type="radio" name="q6" id="q6d" value="d">
+					<label for="q6d">24</label></br>
+				</div>
+				<div>
+					<h3>7. How long shall the term of office of the senators be commenced?</h3>
+					
+					<input type="radio" name="q7" id="q7a" value="a">
+					<label for="q7a">3 years</label></br>
+					
+					<input type="radio" name="q7" id="q7b" value="b">
+					<label for="q7b">4 years</label></br>
+					
+					<input type="radio" name="q7" id="q7c" value="c">
+					<label for="q7c">5 years</label></br>
+					
+					<input type="radio" name="q7" id="q7d" value="d">
+					<label for="q7d">6 years</label></br>
+				</div>
+				<div>
+					<h3>8. The term of office of the President and Vice-president of the Philippines shall be up to how many years?</h3>
+					
+					<input type="radio" name="q8" id="q8a" value="a">
+					<label for="q8a">3 years</label></br>
+					
+					<input type="radio" name="q8" id="q8b" value="b">
+					<label for="q8b">4 years</label></br>
+					
+					<input type="radio" name="q8" id="q8c" value="c">
+					<label for="q8c">5 years</label></br>
+					
+					<input type="radio" name="q8" id="q8d" value="d">
+					<label for="q8d">6 years</label></br>
+				</div>
+				<div>
+					<h3>9. The members of the House of Representatives shall be elected for a term of _______.</h3>
+					
+					<input type="radio" name="q9" id="q9a" value="a">
+					<label for="q9a">3 years</label></br>
+					
+					<input type="radio" name="q9" id="q9b" value="b">
+					<label for="q9b">4 years</label></br>
+					
+					<input type="radio" name="q9" id="q9c" value="c">
+					<label for="q9c">5 years</label></br>
+					
+					<input type="radio" name="q9" id="q9d" value="d">
+					<label for="q9d">6 years</label></br>
+				</div>
+				<div>
+					<h3>10. The following shall be exempted from taxation except:</h3>
+					
+					<input type="radio" name="q10" id="q10a" value="a">
+					<label for="q10a">Lands and buildings</label></br>
+					
+					<input type="radio" name="q10" id="q10b" value="b">
+					<label for="q10b">Churches and convents</label></br>
+					
+					<input type="radio" name="q10" id="q10c" value="c">
+					<label for="q10c">Charitable institutions</label></br>
+					
+					<input type="radio" name="q10" id="q10d" value="d">
+					<label for="q10d">Non-profit cemeteries</label></br>
+				</div>
+				<div>
+					<h3>11. The Congress, by a vote of ____ of both Houses in joint session assembled, voting separately, shall have the sole power to declare a state of war.</h3>
+					
+					<input type="radio" name="q11" id="q11a" value="a">
+					<label for="q11a">Two-thirds</label></br>
+					
+					<input type="radio" name="q11" id="q11b" value="b">
+					<label for="q11b">One-half</label></br>
+					
+					<input type="radio" name="q11" id="q11c" value="c">
+					<label for="q11c">Three quarters</label></br>
+					
+					<input type="radio" name="q11" id="q11d" value="d">
+					<label for="q11d">Minority</label></br>
+				</div>
+				<div>
+					<h3>12. It states that “no person shall be deprived of life, liberty, or property without due process of law, nor any person be denied the equal protection of the laws.</h3>
+					
+					<input type="radio" name="q12" id="q12a" value="a">
+					<label for="q12a">Article VI</label></br>
+					
+					<input type="radio" name="q12" id="q12b" value="b">
+					<label for="q12b">Bill of Rights</label></br>
+					
+					<input type="radio" name="q12" id="q12c" value="c">
+					<label for="q12c">Republic Act</label></br>
+					
+					<input type="radio" name="q12" id="q12d" value="d">
+					<label for="q12d">Court Order</label></br>
+				</div>
+				<div>
+					<h3>13. All of the following is TRUE except:</h3>
+					
+					<input type="radio" name="q13" id="q13a" value="a">
+					<label for="q13a">No person shall be compelled to be a witness against himself</label></br>
+					
+					<input type="radio" name="q13" id="q13b" value="b">
+					<label for="q13b">No person shall be imprisoned for non-payment of debt or poll tax.</label></br>
+					
+					<input type="radio" name="q13" id="q13c" value="c">
+					<label for="q13c">No ex post facto law or bill of attainder shall not be enacted.</label></br>
+					
+					<input type="radio" name="q13" id="q13d" value="d">
+					<label for="q13d">No person shall be detained solely by reason of his political beliefs and aspirations.</label></br>
+				</div>
+				<div>
+					<h3>14. The following are citizens of the Philippines except:</h3>
+					
+					<input type="radio" name="q14" id="q14a" value="a">
+					<label for="q14a">Those fathers or mothers are citizens of the Philippines</label></br>
+					
+					<input type="radio" name="q14" id="q14b" value="b">
+					<label for="q14b">Those who are born before January 17, 1973, of Filipino mothers,</label></br>
+					
+					<input type="radio" name="q14" id="q14c" value="c">
+					<label for="q14c">Those who are naturalized citizens of the Philippines in accordance with law.</label></br>
+					
+					<input type="radio" name="q14" id="q14d" value="d">
+					<label for="q14d">All of the above are true.</label></br>
+				</div>
+				<div>
+					<h3>15. It is the right and obligation by all citizens, who are at least 18 years of age, and qualified by law, to vote in the election of national and local officials of the government without literacy,, property, or other substantive requirement.</h3>
+					
+					<input type="radio" name="q15" id="q15a" value="a">
+					<label for="q15a">Suffrage</label></br>
+					
+					<input type="radio" name="q15" id="q15b" value="b">
+					<label for="q15b">Election</label></br>
+					
+					<input type="radio" name="q15" id="q15c" value="c">
+					<label for="q15c">Voting power</label></br>
+					
+					<input type="radio" name="q15" id="q15d" value="d">
+					<label for="q15d">Civil Right</label></br>
+				</div>
+				<div>
+					<h3>16. The three inherent powers of the state are the following except one:</h3>
+					
+					<input type="radio" name="q16" id="q16a" value="a">
+					<label for="q16a">Police Power</label></br>
+					
+					<input type="radio" name="q16" id="q16b" value="b">
+					<label for="q16b">Power of Eminent Domain</label></br>
+					
+					<input type="radio" name="q16" id="q16c" value="c">
+					<label for="q16c">Power of Taxation</label></br>
+					
+					<input type="radio" name="q16" id="q16d" value="d">
+					<label for="q16d">Power to Impeach</label></br>
+				</div>
+				<div>
+					<h3>17. It is the power of the State to promote public welfare by restraining the use of both liberty and property of all people.</h3>
+					
+					<input type="radio" name="q17" id="q17a" value="a">
+					<label for="q17a">Police Power</label></br>
+					
+					<input type="radio" name="q17" id="q17b" value="b">
+					<label for="q17b">Power of Eminent Domain</label></br>
+					
+					<input type="radio" name="q17" id="q17c" value="c">
+					<label for="q17c">Power if Taxation</label></br>
+					
+					<input type="radio" name="q17" id="q17d" value="d">
+					<label for="q17d">Power to Impeach</label></br>
+				</div>
+				<div>
+					<h3>18. It is the power of the State to take properties for the purpose of public use upon payment of just compensation.</h3>
+					
+					<input type="radio" name="q18" id="q18a" value="a">
+					<label for="q18a">Police Power</label></br>
+					
+					<input type="radio" name="q18" id="q18b" value="b">
+					<label for="q18b">Power of Eminent Domain</label></br>
+					
+					<input type="radio" name="q18" id="q18c" value="c">
+					<label for="q18c">Power if Taxation</label></br>
+					
+					<input type="radio" name="q18" id="q18d" value="d">
+					<label for="q18d">Power to Impeach</label></br>
+				</div>
+				<div>
+					<h3>19. It is the power of the State to impose charge or burden to persons and properties, and property rights for the purpose of raising revenues to protect the people and extend public projects and services.</h3>
+					
+					<input type="radio" name="q19" id="q19a" value="a">
+					<label for="q19a">Police Power</label></br>
+					
+					<input type="radio" name="q19" id="q19b" value="b">
+					<label for="q19b">Power of Eminent Domain</label></br>
+					
+					<input type="radio" name="q19" id="q19c" value="c">
+					<label for="q19c">Power if Taxation</label></br>
+					
+					<input type="radio" name="q19" id="q19d" value="d">
+					<label for="q19d">Power to Impeach</label></br>
+				</div>
+				<div>
+					<h3>20. The following are members of the Constitutional Commission except:</h3>
+					
+					<input type="radio" name="q20" id="q20a" value="a">
+					<label for="q20a">Commission on Civil Rights</label></br>
+					
+					<input type="radio" name="q20" id="q20b" value="b">
+					<label for="q20b">Commission on Elections</label></br>
+					
+					<input type="radio" name="q20" id="q20c" value="c">
+					<label for="q20c">Civil Service Commission</label></br>
+					
+					<input type="radio" name="q20" id="q20d" value="d">
+					<label for="q20d">Commission on Audit</label></br>
+				</div>
+				<div>
+					<h3>21. It states that public office is public trust and that public officers and employees must, at all times, be accountable to the people, serve them with utmost responsibility, integrity, loyalty and efficiency; act with patriotism and justice and lead modest lives.</h3>
+					
+					<input type="radio" name="q21" id="q21a" value="a">
+					<label for="q21a">Public Trust</label></br>
+					
+					<input type="radio" name="q21" id="q21b" value="b">
+					<label for="q21b">Constitutional Rights</label></br>
+					
+					<input type="radio" name="q21" id="q21c" value="c">
+					<label for="q21c">Accountability</label></br>
+					
+					<input type="radio" name="q21" id="q21d" value="d">
+					<label for="q21d">Responsibility</label></br>
+				</div>
+				<div>
+					<h3>22. Who shall have the exclusive power to initiate all cases of impeachment?</h3>
+					
+					<input type="radio" name="q22" id="q22a" value="a">
+					<label for="q22a">House of Blue Ribbon Committee</label></br>
+					
+					<input type="radio" name="q22" id="q22b" value="b">
+					<label for="q22b">House of Representatives</label></br>
+					
+					<input type="radio" name="q22" id="q22c" value="c">
+					<label for="q22c">House of the Senate</label></br>
+					
+					<input type="radio" name="q22" id="q22d" value="d">
+					<label for="q22d">Speaker of the House</label></br>
+				</div>
+				<div>
+					<h3>23. R.A. 6713 is an act to uphold the time-honored principle of public office being a public trust, granting incentives and rewards for exemplary service, enumerating prohibited acts and providing penalties for violations thereof and for other purposes.</h3>
+					
+					<input type="radio" name="q23" id="q23a" value="a">
+					<label for="q23a">Preamble</label></br>
+					
+					<input type="radio" name="q23" id="q23b" value="b">
+					<label for="q23b">Code of Ethics</label></br>
+					
+					<input type="radio" name="q23" id="q23c" value="c">
+					<label for="q23c">Code of Government Officials</label></br>
+					
+					<input type="radio" name="q23" id="q23d" value="d">
+					<label for="q23d">Code of Conduct and Ethical Standards for Public Officials and Employees</label></br>
+				</div>
+				<div>
+					<h3>24. The following are duties and responsibilities of Public officials and Employees except:</h3>
+					
+					<input type="radio" name="q24" id="q24a" value="a">
+					<label for="q24a">Act promptly on letters, inquiries, calls or any other form of communications sent by the public.</label></br>
+					
+					<input type="radio" name="q24" id="q24b" value="b">
+					<label for="q24b">Submit performance reports of the agency or office regularly</label></br>
+					
+					<input type="radio" name="q24" id="q24c" value="c">
+					<label for="q20c">Accept gifts from the public upon prioritizing their queries.</label></br>
+					
+					<input type="radio" name="q24" id="q24d" value="d">
+					<label for="q24d">Process documents and papers expeditiously.</label></br>
+				</div>
+				<div>
+					<h3>25. It is a written instrument containing the proposition and required number of signatories and shall be in a form determined by and submitted to the Commission on Elections.</h3>
+					
+					<input type="radio" name="q25" id="q25a" value="a">
+					<label for="q25a">Bill</label></br>
+					
+					<input type="radio" name="q25" id="q25b" value="b">
+					<label for="q25b">Law</label></br>
+					
+					<input type="radio" name="q25" id="q25c" value="c">
+					<label for="q25c">Proposition</label></br>
+					
+					<input type="radio" name="q25" id="q25d" value="d">
+					<label for="q25d">Petition</label></br>
+				</div>
+				<div>
+					<h3>26. It is the electoral process by which an initiative on the Constitution is either approved or rejected by the people.</h3>
+					
+					<input type="radio" name="q26" id="q26a" value="a">
+					<label for="q26a">Referendum</label></br>
+					
+					<input type="radio" name="q26" id="q26b" value="b">
+					<label for="q26b">Plebiscite</label></br>
+					
+					<input type="radio" name="q26" id="q26c" value="c">
+					<label for="q26c">Petition</label></br>
+					
+					<input type="radio" name="q26" id="q26d" value="d">
+					<label for="q26d">Initiative</label></br>
+				</div>
+				<div>
+					<h3>27. It is the power of the electorate to approve or reject a legislation through an election called for the purpose.</h3>
+					
+					<input type="radio" name="q27" id="q27a" value="a">
+					<label for="q27a">Referendum</label></br>
+					
+					<input type="radio" name="q27" id="q27b" value="b">
+					<label for="q27b">Plebiscite</label></br>
+					
+					<input type="radio" name="q27" id="q27c" value="c">
+					<label for="q27c">Petition</label></br>
+					
+					<input type="radio" name="q27" id="q27d" value="d">
+					<label for="q27d">Initiative</label></br>
+				</div>
+				<div>
+					<h3>28. This law promotes responsible family planning and proper use of reproductive methods to eliminate over-population growth.</h3>
+					
+					<input type="radio" name="q28" id="q28a" value="a">
+					<label for="q28a">RH Bill</label></br>
+					
+					<input type="radio" name="q28" id="q28b" value="b">
+					<label for="q28b">Responsible Parenthood and Reproductive Health Law</label></br>
+					
+					<input type="radio" name="q28" id="q28c" value="c">
+					<label for="q28c">Reproductive Law</label></br>
+					
+					<input type="radio" name="q28" id="q28d" value="d">
+					<label for="q28d">Family Planning</label></br>
+				</div>
+				<div>
+					<h3>29. It is a specialized agency of the United Nations that concerns international public health.</h3>
+					
+					<input type="radio" name="q29" id="q29a" value="a">
+					<label for="q29a">Department of Health</label></br>
+					
+					<input type="radio" name="q29" id="q29b" value="b">
+					<label for="q29b">World Health Organization</label></br>
+					
+					<input type="radio" name="q29" id="q29c" value="c">
+					<label for="q29c">International Health Organization</label></br>
+					
+					<input type="radio" name="q29" id="q29d" value="d">
+					<label for="q29d">All of the above</label></br>
+				</div>
+				<div>
+					<h3>30. APEC is a summit that promotes free trade and economic cooperation throughout the Asia-Pacific region countries. APEC stands for:</h3>
+					
+					<input type="radio" name="q30" id="q30a" value="a">
+					<label for="q30a">Asia Pacific Economic Corporation</label></br>
+					
+					<input type="radio" name="q30" id="q30b" value="b">
+					<label for="q30b">Asia Pacific Economic Cooperation</label></br>
+					
+					<input type="radio" name="q30" id="q30c" value="c">
+					<label for="q30c">Asia Pacific Economic Council</label></br>
+					
+					<input type="radio" name="q30" id="q30d" value="d">
+					<label for="q30d">Asia Pacific Economic Countries</label></br>
+				</div>
+				<div>
+					<h3>31. Association of Southeast Asian Nations (ASEAN) aims to accelerate economic growth, stability, social progress and cultural development in the spirit of equality and partnership to strengthen prosperous and peaceful community along Southeast Asian Nations. Which of the following countries is not a member of ASEAN?</h3>
+					
+					<input type="radio" name="q31" id="q31a" value="a">
+					<label for="q31a">Hong Kong</label></br>
+					
+					<input type="radio" name="q31" id="q31b" value="b">
+					<label for="q31b">Philippines</label></br>
+					
+					<input type="radio" name="q31" id="q31c" value="c">
+					<label for="q31c">Singapore</label></br>
+					
+					<input type="radio" name="q31" id="q31d" value="d">
+					<label for="q31d">Thailand</label></br>
+				</div>
+				<div>
+					<h3>32. It is a law in the Philippines that aims to address legal issues concerning online interactions and harmful internet behavior in the Philippines. It aims to prevent and punish cybercrime in the country.</h3>
+					
+					<input type="radio" name="q32" id="q32a" value="a">
+					<label for="q32a">Cybersquatting</label></br>
+					
+					<input type="radio" name="q32" id="q32b" value="b">
+					<label for="q32b">Cybercrime Act</label></br>
+					
+					<input type="radio" name="q32" id="q32c" value="c">
+					<label for="q32c">Cybercrime Prevention Act</label></br>
+					
+					<input type="radio" name="q32" id="q32d" value="d">
+					<label for="q32d">Cyber Identity Theft Act</label></br>
+				</div>
+				<div>
+					<h3>33. __________waste breaks down into natural components and can be recycled into the life cycle naturally.</h3>
+					
+					<input type="radio" name="q33" id="q33a" value="a">
+					<label for="q33a">Bio-chemical</label></br>
+					
+					<input type="radio" name="q33" id="q33b" value="b">
+					<label for="q33b">Recyclable</label></br>
+					
+					<input type="radio" name="q33" id="q33c" value="c">
+					<label for="q33c">Biodegradable</label></br>
+					
+					<input type="radio" name="q33" id="q33d" value="d">
+					<label for="q33d">Non-biodegradable</label></br>
+				</div>
+				<div>
+					<h3>34. The following are examples of non-biodegradable waste except:</h3>
+					
+					<input type="radio" name="q34" id="q34a" value="a">
+					<label for="q34a">Plastics</label></br>
+					
+					<input type="radio" name="q34" id="q34b" value="b">
+					<label for="q34b">Metals</label></br>
+					
+					<input type="radio" name="q34" id="q34c" value="c">
+					<label for="q34c">Styrofoam</label></br>
+					
+					<input type="radio" name="q34" id="q34d" value="d">
+					<label for="q34d">Papers</label></br>
+				</div>
+				<div>
+					<h3>35. It is a project of DOST for more accurate, integrated and responsive disaster prevention and mitigation system especially in high-risk calamity areas of the Philippines.</h3>
+					
+					<input type="radio" name="q35" id="q35a" value="a">
+					<label for="q35a">PAGASA</label></br>
+					
+					<input type="radio" name="q35" id="q35b" value="b">
+					<label for="q35b">I am Ready</label></br>
+					
+					<input type="radio" name="q35" id="q35c" value="c">
+					<label for="q35c">DOST-Advanced Disaster Program</label></br>
+					
+					<input type="radio" name="q35" id="q35d" value="d">
+					<label for="q35d">Project NOAH</label></br>
+				</div>
+				<div>
+					<h3>36. PAGASA is the official government agency for weather forecasting, flood control, astronomical observations, and time service. PAGASA stands for _______?</h3>
+					
+					<input type="radio" name="q36" id="q36a" value="a">
+					<label for="q36a">Philippine Atmospheric Geographical and Astronomical Services Administration</label></br>
+					
+					<input type="radio" name="q36" id="q36b" value="b">
+					<label for="q36b">Philippine Atmospheric Geophysical and Astronomical Services Administration</label></br>
+					
+					<input type="radio" name="q36" id="q36c" value="c">
+					<label for="q36c">Philippine Atmospheric Geological and Astronomical Services Association</label></br>
+					
+					<input type="radio" name="q36" id="q36d" value="d">
+					<label for="q36d">Philippine Atmospheric Geophysical and Astronomical Services Association</label></br>
+				</div>
+				<div>
+					<h3>37. PHIVOLCS is a branch of DOST to moderate disasters that may arise from volcanic eruptions, earthquakes, tsunami and other related geotectonic phenomena in the Philippines. What is PHIVOLCS?</h3>
+					
+					<input type="radio" name="q37" id="q37a" value="a">
+					<label for="q37a">Philippine Institute of Volcanology and Seismology</label></br>
+					
+					<input type="radio" name="q37" id="q37b" value="b">
+					<label for="q37b">Philippine Institute of Volcanic and Seismic Services</label></br>
+					
+					<input type="radio" name="q37" id="q37c" value="c">
+					<label for="q37c">Philippine Institute of Volcanic and Seismology Services</label></br>
+					
+					<input type="radio" name="q37" id="q37d" value="d">
+					<label for="q37d">Philippine Institute of Volcano and Seismic System</label></br>
+				</div>
+				<div>
+					<h3>38. Which of the following is a renewable source of energy?</h3>
+					
+					<input type="radio" name="q38" id="q38a" value="a">
+					<label for="q38a">Geothermal energy</label></br>
+					
+					<input type="radio" name="q38" id="q38b" value="b">
+					<label for="q38b">Solar energy</label></br>
+					
+					<input type="radio" name="q38" id="q38c" value="c">
+					<label for="q38c">Wind energy</label></br>
+					
+					<input type="radio" name="q38" id="q38d" value="d">
+					<label for="q38d">All of the above</label></br>
+				</div>
+				<div>
+					<h3>39. It is a process by which thermal radiation from the earth’s surface is absorbed by atmospheric greenhouse gases and is re-radiated in all directions.</h3>
+					
+					<input type="radio" name="q39" id="q39a" value="a">
+					<label for="q39a">Global Warming</label></br>
+					
+					<input type="radio" name="q39" id="q39b" value="b">
+					<label for="q39b">Greenhouse Effect</label></br>
+					
+					<input type="radio" name="q39" id="q39c" value="c">
+					<label for="q39c">Ozone Layer</label></br>
+					
+					<input type="radio" name="q39" id="q39d" value="d">
+					<label for="q39d">Solar Radiation</label></br>
+				</div>
+				<div>
+					<h3>40. USB is an industry standard that connects computers and electronic devices like keyboards, digicams, portable media devices, disk drivers, smartphones, and network adapters to any computer. USB stands for?</h3>
+					
+					<input type="radio" name="q40" id="q40a" value="a">
+					<label for="q40a">Unit Serial Box</label></br>
+					
+					<input type="radio" name="q40" id="q40b" value="b">
+					<label for="q40b">Unit Serial Bolt</label></br>
+					
+					<input type="radio" name="q40" id="q40c" value="c">
+					<label for="q40c">Universal Serial Bin</label></br>
+					
+					<input type="radio" name="q40" id="q40d" value="d">
+					<label for="q40d">Universal Serial Bus</label></br>
+				</div>
+					<input type="submit" value="Submit Answers" id="submit" onClick="scrollUp();">
+				</form>
+			</section>
+		</div>
+		</div>
+		</div>
+		</div>
+		
+
+		
+	<script type="text/javascript">
+	function myQuiz() {
+		var total = 40; //set total number of questions. //change
+		var score = 0; // set the score.
+		
+		//get user input
+		var q1 = document.forms["quizForm"]["q1"].value;
+		var q2 = document.forms["quizForm"]["q2"].value;
+		var q3 = document.forms["quizForm"]["q3"].value;
+		var q4 = document.forms["quizForm"]["q4"].value;
+		var q5 = document.forms["quizForm"]["q5"].value;
+		var q6 = document.forms["quizForm"]["q6"].value;
+		var q7 = document.forms["quizForm"]["q7"].value;
+		var q8 = document.forms["quizForm"]["q8"].value;
+		var q9 = document.forms["quizForm"]["q9"].value;
+		var q10 = document.forms["quizForm"]["q10"].value;
+		var q11 = document.forms["quizForm"]["q11"].value;
+		var q12 = document.forms["quizForm"]["q12"].value;
+		var q13 = document.forms["quizForm"]["q13"].value;
+		var q14 = document.forms["quizForm"]["q14"].value;
+		var q15 = document.forms["quizForm"]["q15"].value;
+		var q16 = document.forms["quizForm"]["q16"].value;
+		var q17 = document.forms["quizForm"]["q17"].value;
+		var q18 = document.forms["quizForm"]["q18"].value;
+		var q19 = document.forms["quizForm"]["q19"].value;
+		var q20 = document.forms["quizForm"]["q20"].value;
+		var q21 = document.forms["quizForm"]["q21"].value;
+		var q22 = document.forms["quizForm"]["q22"].value;
+		var q23 = document.forms["quizForm"]["q23"].value;
+		var q24 = document.forms["quizForm"]["q24"].value;
+		var q25 = document.forms["quizForm"]["q25"].value;
+		var q26 = document.forms["quizForm"]["q26"].value;
+		var q27 = document.forms["quizForm"]["q27"].value;
+		var q28 = document.forms["quizForm"]["q28"].value;
+		var q29 = document.forms["quizForm"]["q29"].value;
+		var q30 = document.forms["quizForm"]["q30"].value;
+		var q31 = document.forms["quizForm"]["q31"].value;
+		var q32 = document.forms["quizForm"]["q32"].value;
+		var q33 = document.forms["quizForm"]["q33"].value;
+		var q34 = document.forms["quizForm"]["q34"].value;
+		var q35 = document.forms["quizForm"]["q35"].value;
+		var q36 = document.forms["quizForm"]["q36"].value;
+		var q37 = document.forms["quizForm"]["q37"].value;
+		var q38 = document.forms["quizForm"]["q38"].value;
+		var q39 = document.forms["quizForm"]["q39"].value;
+		var q40 = document.forms["quizForm"]["q40"].value;
+		
+		//set correct answers //change
+		var answers = ["c","c","b","a","a","d","d","d","a","a","a","b","c","d","a","d","a","b","c","a","c","b","d","c","d","b","a","b","b","b","a","c","c","d","d","b","a","d","b","d"]
+						
+		//check answers
+		for(var i = 1; i <= total; i++) {
+			if(eval('q' + i) == answers[i - 1]) {
+				score++;
+			}
+		}
+		//display score
+		var result = document.getElementById('result')
+		result.innerHTML = `<h3 id="results_h3">You scored ${score} out of ${total}</h3>`;
+		
+		//display correct answer
+		var correctAnswer = document.getElementById('correctAnswer');
+		correctAnswer.innerHTML = `<h3 id="correctAnswers_h3">Correct Answers:</h3>`;
+		for(var i = 0; i < answers.length; i++){
+			correctAnswer.innerHTML += `<p id="correctAnswers_p">${i + 1}. ${answers[i]}<p>`;
+		}
+		
+		//return false so that the webpage will not refresh upon submit
+		return false;
+	}
+	</script>
+	<script src="../js/script.js"></script>
+	</body>
+</html>

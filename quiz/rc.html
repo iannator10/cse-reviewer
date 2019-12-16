@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Civil Service Exam Reviewer Philippines</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/style2.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a href="index.html" class="navbar-brand" id="myHeader"><h1>Civil Service Exam Reviewer Philippines</h1></a>	
+				<ul class="nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="../review.html">Review</a></li>
+				</ul>
+		</nav>
+		
+		<div class="container-fluid">
+		<div class="row">
+		<div class="col-sm-2" id="sidebar">
+			<nav id="mySidebar">
+				<ul>
+					<li><a href="al.html">Analogy and Logic</a></li>
+					<li><a href="co.html">Clerical Operations</a></li>
+					<li><a href="cs.html">Correct Spelling and Idiomatic Expressions</a></li>
+					<li><a href="egcu.html">English Grammar and Correct Usage</a></li>
+					<li><a href="ev.html">English Vocabulary</a></li>
+					<li><a href="nr.html">Numerical Reasoning</a></li>
+					<li><a href="pc.html">Philippine Constitution, General Information, Current Events</a></li>
+					<li><a href="po.html">Paragraph Organization</a></li>
+					<li><a href="rc.html">Reading Comprehension</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="col-sm" id="main-container">
+		<div class="container">
+		<!--Start-->
+			<div id="quiz_title">
+				<h2>Reading Comprehension</h2><!--Change-->
+			</div>
+			
+			<div class="row resultContainer">
+				<div class="col-sm" id="result"></div>
+				<div class="col-sm" id="correctAnswer"></div>
+			</div>
+			
+			<section id="quiz"><!--Change-->
+				<form name="quizForm" onsubmit="return myQuiz()">
+				
+				<p id="instructions"><strong>Instruction: </strong><em>Read each paragraph or passage below and select the best answer for what is being asked.</em></p>
+				
+				<div>
+					<h3>1. Boracay, the most famous beach in the Philippines, is also known as a blessed island. I have never met anyone who has not been enthralled and fascinated when they visited Boracay. The first time you set foot on its powder-like sand, you’ll surely feel lucky to be in a paradise island. The moment you see its crystal pristine water, you’ll be so thankful you’re alive. Many locals and foreigners go there again and again not only because of the breathtaking view but also because to celebrate life and its blessings. The best title for the above article is:</h3>
+					
+					<input type="radio" name="q1" id="q1a" value="a">
+					<label for="q1a">Famous Beach in the Philippines</label></br>
+					
+					<input type="radio" name="q1" id="q1b" value="b">
+					<label for="q1b">The Beach of Boracay</label></br>
+					
+					<input type="radio" name="q1" id="q1c" value="c">
+					<label for="q1c">Boracay, a Blessed Island</label></br>
+					
+					<input type="radio" name="q1" id="q1d" value="d">
+					<label for="q1d">Why People Go to Boracay</label></br>
+				</div>
+				<div>
+					<h3>2. Malaysia Airline Flight MH370’s disappearance is still under investigation. Many countries joined in the search for what really happened and where the aircraft is now. The flight lost contact with air traffic controllers about an hour after its take off. The weather was fine when the aircraft was flying so it adds more theories about other possible reasons of the aircraft’s fate. The oil slick spotted off Vietnam’s coast turned out to be fuel oil used in cargo ships so it has nothing to do with the aircraft. Interpol also says the disappearance of the jet plane has nothing to do with terrorist attack. More questions are adding to this quest and no specific answer is given and proven yet. The above selection supports the idea:</h3>
+					
+					<input type="radio" name="q2" id="q2a" value="a">
+					<label for="q2a">That Flight MH370 is somewhere under the sea</label></br>
+					
+					<input type="radio" name="q2" id="q2b" value="b">
+					<label for="q2b">That Flight MH370’s disappearance is still a mystery</label></br>
+					
+					<input type="radio" name="q2" id="q2c" value="c">
+					<label for="q2c">That Flight MH370 must have crashed after loss contact</label></br>
+					
+					<input type="radio" name="q2" id="q2d" value="d">
+					<label for="q2d">That Flight MH370 is in Bermuda Triangle</label></br>
+				</div>
+				<div>
+					<h3>3. Flappy Bird, a mobile game created in 2013 by Dong Nguyen from Vietnam became a hit at the start of 2014. At the end of January 2014, it was the most downloaded game in the iOS App Store. The game is extremely addictive and difficult so users strive harder to score higher. Due to its intense popularity, the creator decided to remove it from the App Store. Because of its millions of downloads, Nguyen claimed he was making $50,000 per day from it. The demand of Flappy Bird made some gadgets owners to sell their devices with Flappy Bird installed for twice or thrice their original price. What is the best title for the above article?</h3>
+					
+					<input type="radio" name="q3" id="q3a" value="a">
+					<label for="q3a">Most Downloaded Game</label></br>
+					
+					<input type="radio" name="q3" id="q3b" value="b">
+					<label for="q3b">The Demand of Flappy Bird Game</label></br>
+					
+					<input type="radio" name="q3" id="q3c" value="c">
+					<label for="q3c">Flappy Bird App</label></br>
+					
+					<input type="radio" name="q3" id="q3d" value="d">
+					<label for="q3d">The Rise of Game Apps</label></br>
+				</div>
+				<div>
+					<h3>4. According to NASA, effects that scientists had predicted in the past would result from global climate change are now occurring like loss of sea ice, accelerated sea level rise and longer, more intense heat waves. Even our Earth’s average temperature has increased about 1 degree in Fahrenheit in the 20th century. Many experts and scientists believe that global temperature will continue to rise from 2.5 to degrees Fahrenheit over the next century. Which of the following conclusions best summarizes the selection above?</h3>
+					
+					<input type="radio" name="q4" id="q4a" value="a">
+					<label for="q4a">Climate change will continue to get worse until humanity takes serious actions to stop it.</label></br>
+					
+					<input type="radio" name="q4" id="q4b" value="b">
+					<label for="q4b">Global climate change is happening on earth now.</label></br>
+					
+					<input type="radio" name="q4" id="q4c" value="c">
+					<label for="q4c">The effects of climate change are getting extremely dangerous.</label></br>
+					
+					<input type="radio" name="q4" id="q4d" value="d">
+					<label for="q4d">Global climate change and its effects are occurring and are likely to increase over time.</label></br>
+				</div>
+				<div>
+					<h3>5. Mark Zuckerberg, Co-Founder and CEO of Facebook spoke with President Barack Obama to discuss about internet privacy impositions by the U.S. government. Zuckerberg said, “The Internet works because most people and companies do the same. We work together to create this secure environment and make our shared space even better for the world. This is why I’ve been so confused and frustrated by the repeated reports of the behavior of the U.S. government. When our engineers work tirelessly to improve security, we imagine we’re protecting you against criminals, not our own government. The U.S. government should be the champion for the Internet, not a threat. It needs to be much more transparent about what it’s doing, or people will believe the worst. I’ve called President Obama to express my frustration over the damage the government is creating for all of our future. Unfortunately, it seems like it will take a very long time for true full reform. So it’s up to us — all of us — to build the Internet we want. Together, we can build a space that is greater and a more important part of the world than anything we have today, but is also safe and secure. I’m committed to seeing this happen, and you can count on Facebook to do our part.” Why is Internet Privacy very important to all of us?</h3>
+					
+					<input type="radio" name="q5" id="q5a" value="a">
+					<label for="q5a">Because it is not safe to trust anyone with our online accounts.</label></br>
+					
+					<input type="radio" name="q5" id="q5b" value="b">
+					<label for="q5b">Because nobody really owns the internet. It is a free space.</label></br>
+					
+					<input type="radio" name="q5" id="q5c" value="c">
+					<label for="q5c">Because it protects and secures not only our online accounts but also our online activities.</label></br>
+					
+					<input type="radio" name="q5" id="q5d" value="d">
+					<label for="q5d">Because the government’s protection is not enough.</label></br>
+				</div>
+				<div>
+					<h3>6. Search Engine Optimization a.k.a. SEO is vital for a website to stay successful for a long time. The world of internet continues to evolve so website owners must stay in the game by making updates while practicing effective SEO. Great content and correct SEO are the blood of a website because without them, a site could die. The paragraph is mainly about what?</h3>
+					
+					<input type="radio" name="q6" id="q6a" value="a">
+					<label for="q6a">The importance of Search Engine Optimization</label></br>
+					
+					<input type="radio" name="q6" id="q6b" value="b">
+					<label for="q6b">The life of a successful website</label></br>
+					
+					<input type="radio" name="q6" id="q6c" value="c">
+					<label for="q6c">The secrets of making a website successful</label></br>
+					
+					<input type="radio" name="q6" id="q6d" value="d">
+					<label for="q6d">How to apply Search Engine Optimization</label></br>
+				</div>
+				<div>
+					<h3>7. There are around 2 million Filipinos without jobs today. That includes graduates and undergraduates. According to survey, there will be another half-million to graduate this year without possible job placements. Unemployed people complain about job shortage. Many go to the cities to apply to some companies but end up going home with nothing. Unemployment rate increases each year even though there are many job fairs. The paragraph states that…</h3>
+					
+					<input type="radio" name="q7" id="q7a" value="a">
+					<label for="q7a">Unemployment in the Philippines is common</label></br>
+					
+					<input type="radio" name="q7" id="q7b" value="b">
+					<label for="q7b">Unemployment rate in the Philippines is seriously increasing</label></br>
+					
+					<input type="radio" name="q7" id="q7c" value="c">
+					<label for="q7c">Unemployment in the Philippines must be solved</label></br>
+					
+					<input type="radio" name="q7" id="q7d" value="d">
+					<label for="q7d">Unemployment solutions for Filipinos</label></br>
+				</div>
+				<div>
+					<h3>8. “In the Olympic Peninsula of northwest Washington State, a small town named Forks exists under a near-constant cover of clouds. It rains on this inconsequential town more than any other place in the United States of America. It was from this town and its gloomy, omnipresent shade that my mother escaped with me when I was only a few months old. It was in this town that I’d been compelled to spend a month every summer until I was fourteen. That was the year I finally put my foot down; these past three summers, my dad, Charlie, vacationed with me in California for two weeks instead. It was to Forks that I now exiled myself – an action that I took with great horror. I detested Forks. I loved Phoenix. I loved the sun and the blistering heat. I loved the vigorous, sprawling city.” -Stephenie Meyer, “The Twilight Saga”. Provide the specific setting of the story</h3>
+					
+					<input type="radio" name="q8" id="q8a" value="a">
+					<label for="q8a">Phoenix</label></br>
+					
+					<input type="radio" name="q8" id="q8b" value="b">
+					<label for="q8b">Rainy day</label></br>
+					
+					<input type="radio" name="q8" id="q8c" value="c">
+					<label for="q8c"Forks, Washington></label></br>
+					
+					<input type="radio" name="q8" id="q8d" value="d">
+					<label for="q8d">Twilight</label></br>
+				</div>
+				<div>
+					<h3>9. “It’s twenty-five after six and the sky still has some shades of purple and orange…oh well just like me, I am standing here, in this secretive rooftop, overjoyed…yet there are still some fragments of fear and haze… I wonder if the sky is glad and excited about the night or if it is crying over the bright day that passed.” – Fehl Dungo – “Higher than the Rooftop” What is the mood of the story?</h3>
+					
+					<input type="radio" name="q9" id="q9a" value="a">
+					<label for="q9a">Happiness</label></br>
+					
+					<input type="radio" name="q9" id="q9b" value="b">
+					<label for="q9b">Sorrow</label></br>
+					
+					<input type="radio" name="q9" id="q9c" value="c">
+					<label for="q9c">Confusion</label></br>
+					
+					<input type="radio" name="q9" id="q9d" value="d">
+					<label for="q9d">Grief</label></br>
+				</div>
+				<div>
+					<h3>10. Investing has been a hot topic for quite a while. Many people especially employees and entrepreneurs don’t rely on time deposits and regular savings account to save and earn interests. The most common investments in the Philippines are through real estates, mutual funds and trust funds. Although few people also join trading in the stock market, more and more Filipinos are not reluctant to invest their money and diversify them to different money making wheels. What does the article try to convey?</h3>
+					
+					<input type="radio" name="q10" id="q10a" value="a">
+					<label for="q10a">Filipinos are now willing to open different investments.</label></br>
+					
+					<input type="radio" name="q10" id="q10b" value="b">
+					<label for="q10b">Filipinos are wise in saving their money.</label></br>
+					
+					<input type="radio" name="q10" id="q10c" value="c">
+					<label for="q10c">Filipinos rely mainly on savings and deposit accounts.</label></br>
+					
+					<input type="radio" name="q10" id="q10d" value="d">
+					<label for="q10d">Filipinos invest in real estates, mutual funds and trust funds.</label></br>
+				</div>
+				
+					<input type="submit" value="Submit Answers" id="submit" onClick="scrollUp();">
+				</form>
+			</section>
+			</div>
+		</div>
+		</div>
+		</div>
+	
+		
+	<script type="text/javascript">
+	function myQuiz() {
+		var total = 10; //set total number of questions. //change
+		var score = 0; // set the score.
+		
+		//get user input
+		var q1 = document.forms["quizForm"]["q1"].value;
+		var q2 = document.forms["quizForm"]["q2"].value;
+		var q3 = document.forms["quizForm"]["q3"].value;
+		var q4 = document.forms["quizForm"]["q4"].value;
+		var q5 = document.forms["quizForm"]["q5"].value;
+		var q6 = document.forms["quizForm"]["q6"].value;
+		var q7 = document.forms["quizForm"]["q7"].value;
+		var q8 = document.forms["quizForm"]["q8"].value;
+		var q9 = document.forms["quizForm"]["q9"].value;
+		var q10 = document.forms["quizForm"]["q10"].value;
+		
+		//set correct answers //change
+		var answers = ["b","c","a","b","d","b","a","b","c","a","b","b","a","c","d","b","a","c","d","b","b","c","b","c","a"]
+						
+		//check answers
+		for(var i = 1; i <= total; i++) {
+			if(eval('q' + i) == answers[i - 1]) {
+				score++;
+			}
+		}
+		//display score
+		var result = document.getElementById('result')
+		result.innerHTML = `<h3 id="results_h3">You scored ${score} out of ${total}</h3>`;
+		
+		//display correct answer
+		var correctAnswer = document.getElementById('correctAnswer');
+		correctAnswer.innerHTML = `<h3 id="correctAnswers_h3">Correct Answers:</h3>`;
+		for(var i = 0; i < answers.length; i++){
+			correctAnswer.innerHTML += `<p id="correctAnswers_p">${i + 1}. ${answers[i]}<p>`;
+		}
+		
+		//return false so that the webpage will not refresh upon submit
+		return false;
+	}
+	</script>
+	<script src="../js/script.js"></script>
+	</body>
+</html>

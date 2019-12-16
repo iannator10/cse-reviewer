@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Civil Service Exam Reviewer Philippines</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/style2.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a href="index.html" class="navbar-brand" id="myHeader"><h1>Civil Service Exam Reviewer Philippines</h1></a>	
+				<ul class="nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="../review.html">Review</a></li>
+				</ul>
+		</nav>
+		
+		<div class="container-fluid">
+		<div class="row">
+		<div class="col-sm-2" id="sidebar">
+			<nav id="mySidebar">
+				<ul>
+					<li><a href="al.html">Analogy and Logic</a></li>
+					<li><a href="co.html">Clerical Operations</a></li>
+					<li><a href="cs.html">Correct Spelling and Idiomatic Expressions</a></li>
+					<li><a href="egcu.html">English Grammar and Correct Usage</a></li>
+					<li><a href="ev.html">English Vocabulary</a></li>
+					<li><a href="nr.html">Numerical Reasoning</a></li>
+					<li><a href="pc.html">Philippine Constitution, General Information, Current Events</a></li>
+					<li><a href="po.html">Paragraph Organization</a></li>
+					<li><a href="rc.html">Reading Comprehension</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="col-sm" id="main-container">
+		<div class="container">
+		<!--Start-->
+			<div id="quiz_title">
+				<h2>Numerical Reasoning</h2><!--Change-->
+			</div>
+			
+			<div class="row resultContainer">
+				<div class="col-sm" id="result"></div>
+				<div class="col-sm" id="correctAnswer"></div>
+			</div>
+			
+			<section id="quiz"><!--Change-->
+				<form name="quizForm" onsubmit="return myQuiz()">
+				
+				<p id="instructions"><strong>Instruction: </strong><em>Solve the following Math quizzes.</em></p>
+				
+				<div>
+					<h3>1. 2187, 729, 243, 81, 27, 9, ____?</h3>
+					
+					<input type="radio" name="q1" id="q1a" value="a">
+					<label for="q1a">6</label></br>
+					
+					<input type="radio" name="q1" id="q1b" value="b">
+					<label for="q1b">3</label></br>
+					
+					<input type="radio" name="q1" id="q1c" value="c">
+					<label for="q1c">5</label></br>
+					
+					<input type="radio" name="q1" id="q1d" value="d">
+					<label for="q1d">2</label></br>
+				</div>
+				<div>
+					<h3>2. 1, 4, 9, 16, 25, 36, 49, 64, ___ ?</h3>
+					
+					<input type="radio" name="q2" id="q2a" value="a">
+					<label for="q2a">72</label></br>
+					
+					<input type="radio" name="q2" id="q2b" value="b">
+					<label for="q2b">75</label></br>
+					
+					<input type="radio" name="q2" id="q2c" value="c">
+					<label for="q2c">81</label></br>
+					
+					<input type="radio" name="q2" id="q2d" value="d">
+					<label for="q2d">90</label></br>
+				</div>
+				<div>
+					<h3>3. 13 -21 34 -55 89 ___?</h3>
+					
+					<input type="radio" name="q3" id="q3a" value="a">
+					<label for="q3a">-95</label></br>
+					
+					<input type="radio" name="q3" id="q3b" value="b">
+					<label for="q3b">104</label></br>
+					
+					<input type="radio" name="q3" id="q3c" value="c">
+					<label for="q3c">-123</label></br>
+					
+					<input type="radio" name="q3" id="q3d" value="d">
+					<label for="q3d">-144</label></br>
+				</div>
+				<div>
+					<h3>4. AZ CX EV GT ____?</h3>
+					
+					<input type="radio" name="q4" id="q4a" value="a">
+					<label for="q4a">IR KP</label></br>
+					
+					<input type="radio" name="q4" id="q4b" value="b">
+					<label for="q4b">IR KQ</label></br>
+					
+					<input type="radio" name="q4" id="q4c" value="c">
+					<label for="q4c">IS KQ</label></br>
+					
+					<input type="radio" name="q4" id="q4d" value="d">
+					<label for="q4d">IS KP</label></br>
+				</div>
+				<div>
+					<h3>5. A5 D25 G125 J625 M3125 ____?</h3>
+					
+					<input type="radio" name="q5" id="q5a" value="a">
+					<label for="q5a">P15525</label></br>
+					
+					<input type="radio" name="q5" id="q5b" value="b">
+					<label for="q5b">P15625</label></br>
+					
+					<input type="radio" name="q5" id="q5c" value="c">
+					<label for="q5c">O15525</label></br>
+					
+					<input type="radio" name="q5" id="q5d" value="d">
+					<label for="q5d">O15625</label></br>
+				</div>
+				<div>
+					<h3>6. What is -25 + 16?</h3>
+					
+					<input type="radio" name="q6" id="q6a" value="a">
+					<label for="q6a">9</label></br>
+					
+					<input type="radio" name="q6" id="q6b" value="b">
+					<label for="q6b">-9</label></br>
+					
+					<input type="radio" name="q6" id="q6c" value="c">
+					<label for="q6c">-41</label></br>
+					
+					<input type="radio" name="q6" id="q6d" value="d">
+					<label for="q6d">41</label></br>
+				</div>
+				<div>
+					<h3>7. What is 107 – (-17) ?</h3>
+					
+					<input type="radio" name="q7" id="q7a" value="a">
+					<label for="q7a">-90</label></br>
+					
+					<input type="radio" name="q7" id="q7b" value="b">
+					<label for="q7b">90</label></br>
+					
+					<input type="radio" name="q7" id="q7c" value="c">
+					<label for="q7c">124</label></br>
+					
+					<input type="radio" name="q7" id="q7d" value="d">
+					<label for="q7d">-124</label></br>
+				</div>
+				<div>
+					<h3>8. (-9) (-22) = ____?</h3>
+					
+					<input type="radio" name="q8" id="q8a" value="a">
+					<label for="q8a">198</label></br>
+					
+					<input type="radio" name="q8" id="q8b" value="b">
+					<label for="q8b">-198</label></br>
+					
+					<input type="radio" name="q8" id="q8c" value="c">
+					<label for="q8c">31</label></br>
+					
+					<input type="radio" name="q8" id="q8d" value="d">
+					<label for="q8d">-31</label></br>
+				</div>
+				<div>
+					<h3>9. (21) (-4) + (8) (-2) = ____?</h3>
+					
+					<input type="radio" name="q9" id="q9a" value="a">
+					<label for="q9a">-100</label></br>
+					
+					<input type="radio" name="q9" id="q9b" value="b">
+					<label for="q9b">100</label></br>
+					
+					<input type="radio" name="q9" id="q9c" value="c">
+					<label for="q9c">-23</label></br>
+					
+					<input type="radio" name="q9" id="q9d" value="d">
+					<label for="q9d">23</label></br>
+				</div>
+				<div>
+					<h3>10. (-560) ÷ 7 = ___?</h3>
+					
+					<input type="radio" name="q10" id="q10a" value="a">
+					<label for="q10a">-80</label></br>
+					
+					<input type="radio" name="q10" id="q10b" value="b">
+					<label for="q10b">80</label></br>
+					
+					<input type="radio" name="q10" id="q10c" value="c">
+					<label for="q10c">-553</label></br>
+					
+					<input type="radio" name="q10" id="q10d" value="d">
+					<label for="q10d">553</label></br>
+				</div>
+				<div>
+					<h3>11. 6/8 + 2 ½ + 4/12 is also the same as?</h3>
+					
+					<input type="radio" name="q11" id="q11a" value="a">
+					<label for="q11a">½ + 2.5 + ¼</label></br>
+					
+					<input type="radio" name="q11" id="q11b" value="b">
+					<label for="q11b">½ + 5/2 + 1/6</label></br>
+					
+					<input type="radio" name="q11" id="q11c" value="c">
+					<label for="q11c">¾ + 2.5 + 1/6</label></br>
+					
+					<input type="radio" name="q11" id="q11d" value="d">
+					<label for="q11d">¾ + 5/2 + 1/3</label></br>
+				</div>
+				<div>
+					<h3>12. What is the Least Common Denominator of 1/8, ¾, and 1/16?</h3>
+					
+					<input type="radio" name="q12" id="q12a" value="a">
+					<label for="q12a">4</label></br>
+					
+					<input type="radio" name="q12" id="q12b" value="b">
+					<label for="q12b">8</label></br>
+					
+					<input type="radio" name="q12" id="q12c" value="c">
+					<label for="q12c">16</label></br>
+					
+					<input type="radio" name="q12" id="q12d" value="d">
+					<label for="q12d">2</label></br>
+				</div>
+				<div>
+					<h3>13. What is the Greatest Common Factor of 36 and 54?</h3>
+					
+					<input type="radio" name="q13" id="q13a" value="a">
+					<label for="q13a">6</label></br>
+					
+					<input type="radio" name="q13" id="q13b" value="b">
+					<label for="q13b">12</label></br>
+					
+					<input type="radio" name="q13" id="q13c" value="c">
+					<label for="q13c">18</label></br>
+					
+					<input type="radio" name="q13" id="q13d" value="d">
+					<label for="q13d">9</label></br>
+				</div>
+				<div>
+					<h3>14. What is the sum of ½ + 8/4 + 6/12 ?</h3>
+					
+					<input type="radio" name="q14" id="q14a" value="a">
+					<label for="q14a">15/12</label></br>
+					
+					<input type="radio" name="q14" id="q14b" value="b">
+					<label for="q14b">3/12</label></br>
+					
+					<input type="radio" name="q14" id="q14c" value="c">
+					<label for="q14c">3</label></br>
+					
+					<input type="radio" name="q14" id="q14d" value="d">
+					<label for="q14d">3 1/12</label></br>
+				</div>
+				<div>
+					<h3>15. 3/9 x 2/3 = ____</h3>
+					
+					<input type="radio" name="q15" id="q15a" value="a">
+					<label for="q15a">6/27</label></br>
+					
+					<input type="radio" name="q15" id="q15b" value="b">
+					<label for="q15b">2/9</label></br>
+					
+					<input type="radio" name="q15" id="q15c" value="c">
+					<label for="q15c">9/18</label></br>
+					
+					<input type="radio" name="q15" id="q15d" value="d">
+					<label for="q15d">1/9</label></br>
+				</div>
+				<div>
+					<h3>16. ¾ ÷ 1/8 = ____</h3>
+					
+					<input type="radio" name="q16" id="q16a" value="a">
+					<label for="q16a">8</label></br>
+					
+					<input type="radio" name="q16" id="q16b" value="b">
+					<label for="q16b">4</label></br>
+					
+					<input type="radio" name="q16" id="q16c" value="c">
+					<label for="q16c">12</label></br>
+					
+					<input type="radio" name="q16" id="q16d" value="d">
+					<label for="q16d">6</label></br>
+				</div>
+				<div>
+					<h3>17. What is the decimal form of ¾ %</h3>
+					
+					<input type="radio" name="q17" id="q17a" value="a">
+					<label for="q17a">.0075</label></br>
+					
+					<input type="radio" name="q17" id="q17b" value="b">
+					<label for="q17b">.075</label></br>
+					
+					<input type="radio" name="q17" id="q17c" value="c">
+					<label for="q17c">.75</label></br>
+					
+					<input type="radio" name="q17" id="q17d" value="d">
+					<label for="q17d">.00075</label></br>
+				</div>
+				<div>
+					<h3>18. Convert 3.4% as a fraction.</h3>
+					
+					<input type="radio" name="q18" id="q18a" value="a">
+					<label for="q18a">34/100</label></br>
+					
+					<input type="radio" name="q18" id="q18b" value="b">
+					<label for="q18b">.34/100</label></br>
+					
+					<input type="radio" name="q18" id="q18c" value="c">
+					<label for="q18c">3.4/1000</label></br>
+					
+					<input type="radio" name="q18" id="q18d" value="d">
+					<label for="q18d">3.4/100</label></br>
+				</div>
+				<div>
+					<h3>19. What is ¼ in decimal?</h3>
+					
+					<input type="radio" name="q19" id="q19a" value="a">
+					<label for="q19a">.025</label></br>
+					
+					<input type="radio" name="q19" id="q19b" value="b">
+					<label for="q19b">.25</label></br>
+					
+					<input type="radio" name="q19" id="q19c" value="c">
+					<label for="q19c">2.5</label></br>
+					
+					<input type="radio" name="q19" id="q19d" value="d">
+					<label for="q19d">.0025</label></br>
+				</div>
+				<div>
+					<h3>20. What is the ratio of ½ to 2/5?</h3>
+					
+					<input type="radio" name="q20" id="q20a" value="a">
+					<label for="q20a">3:4</label></br>
+					
+					<input type="radio" name="q20" id="q20b" value="b">
+					<label for="q20b">5:4</label></br>
+					
+					<input type="radio" name="q20" id="q20c" value="c">
+					<label for="q20c">1:3</label></br>
+					
+					<input type="radio" name="q20" id="q20d" value="d">
+					<label for="q20d">2:5</label></br>
+				</div>
+				<div>
+					<h3>21. 2.12 is multiplied by 10 to the sixth power is?</h3>
+					
+					<input type="radio" name="q21" id="q21a" value="a">
+					<label for="q21a">212.000</label></br>
+					
+					<input type="radio" name="q21" id="q21b" value="b">
+					<label for="q21b">2,120,000</label></br>
+					
+					<input type="radio" name="q21" id="q21c" value="c">
+					<label for="q21c">212,000</label></br>
+					
+					<input type="radio" name="q21" id="q21d" value="d">
+					<label for="q21d">21,200</label></br>
+				</div>
+				<div>
+					<h3>22. 25 is multiplied by 10 to the fifth power is?</h3>
+					
+					<input type="radio" name="q22" id="q22a" value="a">
+					<label for="q22a">2,500,000</label></br>
+					
+					<input type="radio" name="q22" id="q22b" value="b">
+					<label for="q22b">250,000</label></br>
+					
+					<input type="radio" name="q22" id="q22c" value="c">
+					<label for="q22c">25,000</label></br>
+					
+					<input type="radio" name="q22" id="q22d" value="d">
+					<label for="q22d">.000025</label></br>
+				</div>
+				<div>
+					<h3>23. Find the value of x in the equation: 5x + 25 =10</h3>
+					
+					<input type="radio" name="q23" id="q23a" value="a">
+					<label for="q23a">5</label></br>
+					
+					<input type="radio" name="q23" id="q23b" value="b">
+					<label for="q23b">3</label></br>
+					
+					<input type="radio" name="q23" id="q23c" value="c">
+					<label for="q23c">-3</label></br>
+					
+					<input type="radio" name="q23" id="q23d" value="d">
+					<label for="q23d">-5</label></br>
+				</div>
+				<div>
+					<h3>24. If x=8, find the value of y in the equation: 4x – 2y = 28.</h3>
+					
+					<input type="radio" name="q24" id="q24a" value="a">
+					<label for="q24a">-4</label></br>
+					
+					<input type="radio" name="q24" id="q24b" value="b">
+					<label for="q24b">-2</label></br>
+					
+					<input type="radio" name="q24" id="q24c" value="c">
+					<label for="q20c">4</label></br>
+					
+					<input type="radio" name="q24" id="q24d" value="d">
+					<label for="q24d">2</label></br>
+				</div>
+				<div>
+					<h3>25. Find the value of x if y= 8 in the equation: 2x + 4y = 50</h3>
+					
+					<input type="radio" name="q25" id="q25a" value="a">
+					<label for="q25a">9</label></br>
+					
+					<input type="radio" name="q25" id="q25b" value="b">
+					<label for="q25b">8</label></br>
+					
+					<input type="radio" name="q25" id="q25c" value="c">
+					<label for="q25c">10</label></br>
+					
+					<input type="radio" name="q25" id="q25d" value="d">
+					<label for="q25d">4</label></br>
+				</div>
+				<div>
+					<h3>26. Kit is twice as old as his friend Sam. Sam is 5 years older than Cara. In 5 years, Kit will be three times as old as Cara. How old is Sam?</h3>
+					
+					<input type="radio" name="q26" id="q26a" value="a">
+					<label for="q26a">2 years old</label></br>
+					
+					<input type="radio" name="q26" id="q26b" value="b">
+					<label for="q26b">3 years old</label></br>
+					
+					<input type="radio" name="q26" id="q26c" value="c">
+					<label for="q26c">4 years old</label></br>
+					
+					<input type="radio" name="q26" id="q26d" value="d">
+					<label for="q26d">5 years old</label></br>
+				</div>
+				<div>
+					<h3>27. James’s dad is 5 times older than James and James is twice as old as his sister Sara. In two years, the sum of their ages will be 58. How old is James now?</h3>
+					
+					<input type="radio" name="q27" id="q27a" value="a">
+					<label for="q27a">6 years old</label></br>
+					
+					<input type="radio" name="q27" id="q27b" value="b">
+					<label for="q27b">7 years old</label></br>
+					
+					<input type="radio" name="q27" id="q27c" value="c">
+					<label for="q27c">8 years old"</label></br>
+					
+					<input type="radio" name="q27" id="q27d" value="d">
+					<label for="q27d">9 years old</label></br>
+				</div>
+				<div>
+					<h3>28. Cathy scored 85, 87, 90, 95, and 100 in her Math exams. What will be her average grade in Math from this period?</h3>
+					
+					<input type="radio" name="q28" id="q28a" value="a">
+					<label for="q28a">91.40</label></br>
+					
+					<input type="radio" name="q28" id="q28b" value="b">
+					<label for="q28b">91.50</label></br>
+					
+					<input type="radio" name="q28" id="q28c" value="c">
+					<label for="q28c">92</label></br>
+					
+					<input type="radio" name="q28" id="q28d" value="d">
+					<label for="q28d">93.50</label></br>
+				</div>
+				<div>
+					<h3>29. Letty left home and drove at the rate of 50 miles per hour for 2 hours. She stopped for lunch then drove for another 4 hours at 65 mph to reach Los Angeles. How many miles did Letty drive to reach LA?</h3>
+					
+					<input type="radio" name="q29" id="q29a" value="a">
+					<label for="q29a">115 miles</label></br>
+					
+					<input type="radio" name="q29" id="q29b" value="b">
+					<label for="q29b">360 miles</label></br>
+					
+					<input type="radio" name="q29" id="q29c" value="c">
+					<label for="q29c">310 miles</label></br>
+					
+					<input type="radio" name="q29" id="q29d" value="d">
+					<label for="q29d">100 miles</label></br>
+				</div>
+				<div>
+					<h3>30. Michelle went to SM for the 3-day sale. She bought a new pair of shoes and paid only P2,450 discounted for 20% off. What was the original price of the shoes?</h3>
+					
+					<input type="radio" name="q30" id="q30a" value="a">
+					<label for="q30a">P3,062.50</label></br>
+					
+					<input type="radio" name="q30" id="q30b" value="b">
+					<label for="q30b">P3,260.50</label></br>
+					
+					<input type="radio" name="q30" id="q30c" value="c">
+					<label for="q30c">P3,620.50</label></br>
+					
+					<input type="radio" name="q30" id="q30d" value="d">
+					<label for="q30d">P3,026.50</label></br>
+				</div>
+					<input type="submit" value="Submit Answers" id="submit" onClick="scrollUp();">
+				</form>
+			</section>
+		</div>
+		</div>
+		</div>
+		</div>
+		
+
+	<script type="text/javascript">
+	function myQuiz() {
+		var total = 30; //set total number of questions. //change
+		var score = 0; // set the score.
+		
+		//get user input
+		var q1 = document.forms["quizForm"]["q1"].value;
+		var q2 = document.forms["quizForm"]["q2"].value;
+		var q3 = document.forms["quizForm"]["q3"].value;
+		var q4 = document.forms["quizForm"]["q4"].value;
+		var q5 = document.forms["quizForm"]["q5"].value;
+		var q6 = document.forms["quizForm"]["q6"].value;
+		var q7 = document.forms["quizForm"]["q7"].value;
+		var q8 = document.forms["quizForm"]["q8"].value;
+		var q9 = document.forms["quizForm"]["q9"].value;
+		var q10 = document.forms["quizForm"]["q10"].value;
+		var q11 = document.forms["quizForm"]["q11"].value;
+		var q12 = document.forms["quizForm"]["q12"].value;
+		var q13 = document.forms["quizForm"]["q13"].value;
+		var q14 = document.forms["quizForm"]["q14"].value;
+		var q15 = document.forms["quizForm"]["q15"].value;
+		var q16 = document.forms["quizForm"]["q16"].value;
+		var q17 = document.forms["quizForm"]["q17"].value;
+		var q18 = document.forms["quizForm"]["q18"].value;
+		var q19 = document.forms["quizForm"]["q19"].value;
+		var q20 = document.forms["quizForm"]["q20"].value;
+		var q21 = document.forms["quizForm"]["q21"].value;
+		var q22 = document.forms["quizForm"]["q22"].value;
+		var q23 = document.forms["quizForm"]["q23"].value;
+		var q24 = document.forms["quizForm"]["q24"].value;
+		var q25 = document.forms["quizForm"]["q25"].value;
+		var q26 = document.forms["quizForm"]["q26"].value;
+		var q27 = document.forms["quizForm"]["q27"].value;
+		var q28 = document.forms["quizForm"]["q28"].value;
+		var q29 = document.forms["quizForm"]["q29"].value;
+		var q30 = document.forms["quizForm"]["q30"].value;
+		
+		//set correct answers //change
+		var answers = ["b","c","d","a","b","b","c","a","a","a","d","c","c","c","b","d","a","d","b","b","b","a","c","d","a","d","c","a","b","a"]
+						
+		//check answers
+		for(var i = 1; i <= total; i++) {
+			if(eval('q' + i) == answers[i - 1]) {
+				score++;
+			}
+		}
+		//display score
+		var result = document.getElementById('result')
+		result.innerHTML = `<h3 id="results_h3">You scored ${score} out of ${total}</h3>`;
+		
+		//display correct answer
+		var correctAnswer = document.getElementById('correctAnswer');
+		correctAnswer.innerHTML = `<h3 id="correctAnswers_h3">Correct Answers:</h3>`;
+		for(var i = 0; i < answers.length; i++){
+			correctAnswer.innerHTML += `<p id="correctAnswers_p">${i + 1}. ${answers[i]}<p>`;
+		}
+		
+		//return false so that the webpage will not refresh upon submit
+		return false;
+	}
+	</script>
+	<script src="../js/script.js"></script>
+	</body>
+</html>
